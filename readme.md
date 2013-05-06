@@ -4,10 +4,10 @@ This is an example of using database transactions with Apache Camel. It is based
  * TransactedJDBCRouteBuilder
 
 There are four testcases:
-1. TransactionlessJDBCTest.transactionlessJDBCTest_noError - will succeed, and shows that transactionless routebuilder inserts two records if there are no exceptions.
-1. TransactionlessJDBCTest.transactionlessJDBCTest_withConnectionProblem - will fail, showing that when the second insert fails, the first one is not rolled back.
-1. TransactedJDBCTest.transactedJDBCTest_noError - will succeed, showing two records inserted.
-1. TransactedJDBCTest.transactedJDBCTest_withConnectionProblem - will succeed, showing that the first insert is rolled back if the second one fails.
+ 1. TransactionlessJDBCTest.transactionlessJDBCTest_noError - will succeed, and shows that transactionless routebuilder inserts two records if there are no exceptions.
+ 1. TransactionlessJDBCTest.transactionlessJDBCTest_withConnectionProblem - will fail, showing that when the second insert fails, the first one is not rolled back.
+ 1. TransactedJDBCTest.transactedJDBCTest_noError - will succeed, showing two records inserted.
+ 1. TransactedJDBCTest.transactedJDBCTest_withConnectionProblem - will succeed, showing that the first insert is rolled back if the second one fails.
 
 The project is built with Maven, so to run it, you need Maven on your path, and then you can run:
  * mvn test 
